@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(157, 213, 102);
+}
+.container {
+  text-align: center;
+  width: 100%;
+}
+h2 {
+  background-image: url(img/charada.jpeg);
+  color: rgb(4, 4, 65);
+  font-style: italic;
+  animation: mover 5s infinite linear;
+}
+
+@keyframes mover {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+  }
+
+  .container img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #82add5; /* Cor de fundo do rodapé */
+  padding: 20px;
+  color: rgb(9, 9, 59);
+  border-top: 1px solid #200606;
+  font-style: italic;
+}
